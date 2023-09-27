@@ -2,11 +2,11 @@
 // 1
 
 
-let ricxvi: Int = 30
+let a: Int = 30
 
-let ricxvi2: Int = 15
+let b: Int = 15
 
-print(ricxvi + ricxvi2)
+print(a + b)
 
 
 // 2
@@ -72,3 +72,70 @@ for char in tbcStr {
 print(reversedTbcStr)
 
 // 6
+
+
+let ornishnaErtnairi = [11,22,33,44,55,66,77,88,99]
+
+var counter1: Int = 1
+
+while counter1 <= 100 {
+    counter1 += 1
+    if ornishnaErtnairi.contains(counter1) {
+        print(counter1)
+    }
+}
+
+
+// 7
+
+
+let cxranishna = 186574334
+
+var cxranishnaStr = String(cxranishna)
+
+var cxranishnaReversed = ""
+
+for char in cxranishnaStr {
+    cxranishnaReversed.insert(char, at: cxranishnaReversed.startIndex)
+}
+
+print(cxranishnaReversed)
+
+
+// 8
+
+
+var isNumberFound: Bool = false
+
+var counter2: Int = 0
+
+while isNumberFound == false {
+    counter2 += 1
+    
+    if counter2 % 5 == 0 && counter2 % 9 == 0 {
+        print(counter2)
+        isNumberFound = true
+    }
+    
+}
+
+
+// 9
+
+let month: String = "december"
+
+switch month {
+case "december", "january", "february":
+    print("Winter")
+case "march", "april", "may":
+    print("spring")
+case "june", "july", "august":
+    print("summer")
+case "september", "october", "november":
+    print("autumn")
+default:
+    print("Invalid month")
+}
+
+
+// 10
